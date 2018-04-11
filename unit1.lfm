@@ -1,0 +1,304 @@
+object Form1: TForm1
+  Left = 244
+  Height = 476
+  Top = 124
+  Width = 1278
+  Caption = 'Обучающая программа "Логические переменные и логические функции"'
+  ClientHeight = 476
+  ClientWidth = 1278
+  Constraints.MinHeight = 476
+  Constraints.MinWidth = 1278
+  OnCreate = FormCreate
+  LCLVersion = '1.8.2.0'
+  object menu_: TGroupBox
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 0
+    Height = 476
+    Top = 0
+    Width = 176
+    Anchors = [akTop, akLeft, akBottom]
+    Caption = 'Меню'
+    ClientHeight = 456
+    ClientWidth = 172
+    Color = clActiveCaption
+    ParentColor = False
+    TabOrder = 0
+    object Button1: TButton
+      Left = 16
+      Height = 48
+      Top = 16
+      Width = 136
+      Caption = 'Начать обучение'
+      TabOrder = 0
+    end
+    object Button2: TButton
+      Left = 16
+      Height = 48
+      Top = 72
+      Width = 136
+      Caption = 'Продолжить обучение'
+      OnClick = Button2Click
+      TabOrder = 1
+    end
+    object Button3: TButton
+      Left = 16
+      Height = 48
+      Top = 128
+      Width = 136
+      Caption = 'Завершить обучение'
+      OnClick = Button2Click
+      TabOrder = 2
+    end
+  end
+  object teory: TGroupBox
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 176
+    Height = 476
+    Top = 0
+    Width = 552
+    Anchors = [akTop, akLeft, akBottom]
+    Caption = 'Теория'
+    ClientHeight = 456
+    ClientWidth = 548
+    Color = clForm
+    ParentColor = False
+    TabOrder = 1
+    object Label10: TLabel
+      Left = 8
+      Height = 45
+      Top = 16
+      Width = 522
+      Caption = 'Что такое логические переменные ?'#13#10'Логические переменные - это переменная, которая может принимать два значения: "истина" '#13#10'или "ложь" '
+      Color = clDefault
+      ParentColor = False
+      Transparent = False
+    end
+    object Button4: TButton
+      Left = 184
+      Height = 48
+      Top = 392
+      Width = 136
+      Caption = 'Перейти к тесту'
+      TabOrder = 0
+    end
+  end
+  object test: TGroupBox
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 728
+    Height = 476
+    Top = 0
+    Width = 550
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Caption = 'Тест'
+    ClientHeight = 456
+    ClientWidth = 546
+    Color = clBackground
+    ParentColor = False
+    TabOrder = 2
+    object Label1: TLabel
+      Left = 0
+      Height = 15
+      Top = 16
+      Width = 34
+      Caption = 'Label1'
+      ParentColor = False
+    end
+  end
+  object test1: TGroupBox
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 728
+    Height = 476
+    Top = 0
+    Width = 550
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Caption = 'Тест'
+    ClientHeight = 456
+    ClientWidth = 546
+    TabOrder = 3
+    Visible = False
+    object Label2: TLabel
+      Left = 0
+      Height = 15
+      Top = 16
+      Width = 34
+      Caption = 'Label1'
+      ParentColor = False
+    end
+  end
+  object test2: TGroupBox
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 728
+    Height = 476
+    Top = 0
+    Width = 550
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Caption = 'Тест'
+    ClientHeight = 456
+    ClientWidth = 546
+    TabOrder = 4
+    Visible = False
+    object Label3: TLabel
+      Left = 0
+      Height = 15
+      Top = 16
+      Width = 34
+      Caption = 'Label1'
+      ParentColor = False
+    end
+  end
+  object test3: TGroupBox
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 728
+    Height = 476
+    Top = 0
+    Width = 550
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Caption = 'Тест'
+    ClientHeight = 456
+    ClientWidth = 546
+    TabOrder = 5
+    Visible = False
+    object Label4: TLabel
+      Left = 0
+      Height = 15
+      Top = 16
+      Width = 34
+      Caption = 'Label1'
+      ParentColor = False
+    end
+  end
+  object test4: TGroupBox
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 728
+    Height = 476
+    Top = 0
+    Width = 550
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Caption = 'Тест'
+    ClientHeight = 456
+    ClientWidth = 546
+    TabOrder = 6
+    Visible = False
+    object Label5: TLabel
+      Left = 0
+      Height = 15
+      Top = 16
+      Width = 34
+      Caption = 'Label1'
+      ParentColor = False
+    end
+  end
+  object test5: TGroupBox
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 728
+    Height = 476
+    Top = 0
+    Width = 550
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Caption = 'Тест'
+    ClientHeight = 456
+    ClientWidth = 546
+    TabOrder = 7
+    Visible = False
+    object Label6: TLabel
+      Left = 0
+      Height = 15
+      Top = 16
+      Width = 34
+      Caption = 'Label1'
+      ParentColor = False
+    end
+  end
+  object test6: TGroupBox
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 728
+    Height = 476
+    Top = 0
+    Width = 550
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Caption = 'Тест'
+    ClientHeight = 456
+    ClientWidth = 546
+    TabOrder = 8
+    Visible = False
+    object Label7: TLabel
+      Left = 0
+      Height = 15
+      Top = 16
+      Width = 34
+      Caption = 'Label1'
+      ParentColor = False
+    end
+  end
+  object test7: TGroupBox
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 728
+    Height = 476
+    Top = 0
+    Width = 550
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Caption = 'Тест'
+    ClientHeight = 456
+    ClientWidth = 546
+    TabOrder = 9
+    Visible = False
+    object Label8: TLabel
+      Left = 0
+      Height = 15
+      Top = 16
+      Width = 34
+      Caption = 'Label1'
+      ParentColor = False
+    end
+  end
+  object test8: TGroupBox
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 728
+    Height = 476
+    Top = 0
+    Width = 550
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Caption = 'Тест'
+    ClientHeight = 456
+    ClientWidth = 546
+    TabOrder = 10
+    Visible = False
+    object Label9: TLabel
+      Left = 8
+      Height = 15
+      Top = 16
+      Width = 34
+      Caption = 'Label1'
+      ParentColor = False
+    end
+  end
+end
