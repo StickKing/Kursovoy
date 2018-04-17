@@ -19,6 +19,16 @@ type
     Button3: TButton;
     Button5: TButton;
     ans: TCheckGroup;
+    Button6: TButton;
+    Button7: TButton;
+    Button8: TButton;
+    img2: TImage;
+    img4: TImage;
+    img5: TImage;
+    img6: TImage;
+    ttttttans: TRadioGroup;
+    tttttans: TRadioGroup;
+    ttttans: TRadioGroup;
     tttans1: TRadioGroup;
     tttans: TCheckGroup;
     img1: TImage;
@@ -31,11 +41,7 @@ type
     cl: TButton;
     Button4: TButton;
     Label1: TLabel;
-    Label2: TLabel;
     Label3: TLabel;
-    Label5: TLabel;
-    Label6: TLabel;
-    Label7: TLabel;
     Label8: TLabel;
     Label9: TLabel;
     Memo1: TMemo;
@@ -59,19 +65,39 @@ type
     tttans3: TRadioGroup;
     tttans4: TRadioGroup;
     tttans5: TRadioGroup;
+    ttttans1: TRadioGroup;
+    ttttans2: TRadioGroup;
+    ttttans3: TRadioGroup;
+    ttttans4: TRadioGroup;
+    ttttans5: TRadioGroup;
+    tttttans1: TRadioGroup;
+    tttttans2: TRadioGroup;
+    tttttans3: TRadioGroup;
+    tttttans4: TRadioGroup;
+    tttttans5: TRadioGroup;
+    ttttttans1: TRadioGroup;
+    ttttttans2: TRadioGroup;
+    ttttttans3: TRadioGroup;
+    ttttttans4: TRadioGroup;
+    ttttttans5: TRadioGroup;
     procedure begClick(Sender: TObject);
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
     procedure Button4Click(Sender: TObject);
     procedure Button5Click(Sender: TObject);
+    procedure Button6Click(Sender: TObject);
+    procedure Button7Click(Sender: TObject);
+    procedure Button8Click(Sender: TObject);
     procedure clClick(Sender: TObject);
     procedure contClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure FormCreate(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure img0Click(Sender: TObject);
+    procedure img5Click(Sender: TObject);
     procedure test1Click(Sender: TObject);
+    procedure ttttans5Click(Sender: TObject);
   private
 
   public
@@ -93,6 +119,8 @@ implementation
 procedure TForm1.begClick(Sender: TObject);
 begin
 
+
+  //1
   cont.Enabled:=false;
   levels:= '1';
   Memo1.Text:='Что такое логические переменные ?' + #13#10;
@@ -105,6 +133,7 @@ procedure TForm1.Button1Click(Sender: TObject);
 var value:boolean;
 begin
 
+  //3
   value:= false;
 
   if t1ans1.Checked[3]
@@ -155,7 +184,7 @@ end;
 procedure TForm1.Button2Click(Sender: TObject);
 var value:boolean;
 begin
-
+  //4
   value:= false;
 
   if ttans1.Checked[1] and ttans1.Checked[3] and ttans1.Checked[4]
@@ -164,11 +193,11 @@ begin
   then value:= true
   else value:= false;
 
-  if value and (ttans.ItemIndex = 2) and (ttans2.ItemIndex = 1) and (ttans2.ItemIndex = 0) then
+  if value and (ttans.ItemIndex = 2) and (ttans2.ItemIndex = 1) and (ttans3.ItemIndex = 0) then
   begin
 
        ShowMessage('Тест решён успешно, переходит к следующему уровню, нажмите ОК для продолжения');
-       test3.Visible := false;
+       test1.Visible := false;
        img1.Visible:=true;
        levels:= '4';
        teory.Visible:=true;
@@ -196,7 +225,7 @@ begin
 
   value:= false;
 
-  if tttans.Checked[0] and ttans.Checked[1] and ttans.Checked[3]
+  if tttans.Checked[0] and tttans.Checked[1] and tttans.Checked[2]
   then value:= true
   else value:= false;
 
@@ -206,7 +235,9 @@ begin
        ShowMessage('Тест решён успешно, переходит к следующему уровню, нажмите ОК для продолжения');
        test3.Visible := false;
        img1.Visible:=false;
-       levels:= '4';
+       img0.Visible:=false;
+       img2.Visible:=true;
+       levels:= '5';
        teory.Visible:=true;
        Memo1.Clear;
        Memo1.Text:='Что такое логическое "ИЛИ" или дезьюнкция?' + #13#10;
@@ -217,7 +248,7 @@ begin
   else
   begin
 
-       test4.Visible:=false;
+       test3.Visible:=false;
        ShowMessage('Увы, тест вы не прошли, почитайте теорию и попробуйте снова');
        teory.Visible:=true;
 
@@ -279,6 +310,7 @@ procedure TForm1.Button5Click(Sender: TObject);
 var value:boolean;
 begin
 
+  //2
   value:= false;
 
   if ans.Checked[0] and ans.Checked[3] and not(ans.Checked[1]) and not(ans.Checked[2])
@@ -304,6 +336,116 @@ begin
   begin
 
        test.Visible:=false;
+       ShowMessage('Увы, тест вы не прошли, почитайте теорию и попробуйте снова');
+       teory.Visible:=true;
+
+  end;
+
+
+
+end;
+
+procedure TForm1.Button6Click(Sender: TObject);
+begin
+  //6
+  if (ttttans.ItemIndex = 2)
+  and (ttttans1.ItemIndex = 0)
+  and (ttttans2.ItemIndex = 1)
+  and (ttttans3.ItemIndex = 1)
+  and (ttttans4.ItemIndex = 0)
+  and (ttttans5.ItemIndex = 0)
+  then
+  begin
+
+       ShowMessage('Тест решён успешно, переходит к следующему уровню');
+       test4.Visible := false;
+       img2.Visible:=false;
+       img3.Visible:=true;
+       levels:= '6';
+       teory.Visible:=true;
+       Memo1.Clear;
+       Memo1.Text:='Что такое импликация ?' + #13#10;
+       Memo1.Text:= Memo1.Text + 'Импликация - это сложное логическое выражение, которое является ложным тогда и только тогда, когда условие(переменная лежащая по левую сторону) истинно, а следствие(переменная лежащая по правую сторону) ложно ';
+       Memo1.Text:= Memo1.Text + #13#10 + #13#10 + 'Внизу вы можете видеть таблицу истинности для данной функции';
+
+  end
+  else
+  begin
+
+       test4.Visible:=false;
+       ShowMessage('Увы, тест вы не прошли, почитайте теорию и попробуйте снова');
+       teory.Visible:=true;
+
+  end;
+
+
+
+end;
+
+procedure TForm1.Button7Click(Sender: TObject);
+begin
+
+  //7
+  if (tttttans.ItemIndex = 0)
+  and (tttttans1.ItemIndex = 1)
+  and (tttttans2.ItemIndex = 1)
+  and (tttttans3.ItemIndex = 0)
+  and (tttttans4.ItemIndex = 1)
+  and (tttttans5.ItemIndex = 0)
+  then
+  begin
+
+       ShowMessage('Тест решён успешно, переходит к следующему уровню');
+       test5.Visible := false;
+       img3.Visible:=false;
+       img6.Visible:=true;
+       levels:= '7';
+       teory.Visible:=true;
+       Memo1.Clear;
+       Memo1.Text:='Порядок действий' + #13#10;
+       Memo1.Text:= Memo1.Text + 'Краткое описание того в каком порядке выполнять логические операции';
+       Memo1.Text:= Memo1.Text + #13#10 + #13#10 + 'Внизу вы можете видеть картинку описывающую это';
+
+  end
+  else
+  begin
+
+       test5.Visible:=false;
+       ShowMessage('Увы, тест вы не прошли, почитайте теорию и попробуйте снова');
+       teory.Visible:=true;
+
+  end;
+
+
+
+end;
+
+procedure TForm1.Button8Click(Sender: TObject);
+begin
+
+  //8
+  if (ttttttans.ItemIndex = 0)
+  and (ttttttans1.ItemIndex = 0)
+  and (ttttttans2.ItemIndex = 0)
+  and (ttttttans3.ItemIndex = 1)
+  and (ttttttans4.ItemIndex = 1)
+  and (ttttttans5.ItemIndex = 1)
+  then
+  begin
+
+       ShowMessage('Тест решён успешно, переходит к следующему уровню');
+       test5.Visible := false;
+       img6.Visible:=false;
+       levels:= '8';
+       teory.Visible:=true;
+       Memo1.Clear;
+       Memo1.Text:='Теперь вы знаете все основные правила, осталось решить итоговый тест и обучение будет закончено, так что не теряя времени жмите кнопку "Перейти к тесту"';
+
+  end
+  else
+  begin
+
+       test5.Visible:=false;
        ShowMessage('Увы, тест вы не прошли, почитайте теорию и попробуйте снова');
        teory.Visible:=true;
 
@@ -435,10 +577,21 @@ begin
 
 end;
 
+procedure TForm1.img5Click(Sender: TObject);
+begin
+
+end;
+
 procedure TForm1.test1Click(Sender: TObject);
 begin
 
 end;
+
+procedure TForm1.ttttans5Click(Sender: TObject);
+begin
+
+end;
+
 
 end.
 

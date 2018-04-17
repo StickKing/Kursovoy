@@ -1,7 +1,7 @@
 object Form1: TForm1
-  Left = 241
+  Left = 221
   Height = 781
-  Top = 111
+  Top = 178
   Width = 1621
   Caption = 'Обучающая программа "Логические переменные и логические функции"'
   ClientHeight = 781
@@ -90,53 +90,198 @@ object Form1: TForm1
       ParentFont = False
       TabOrder = 1
     end
-  end
-  object test3: TGroupBox
-    AnchorSideRight.Control = Owner
-    AnchorSideRight.Side = asrBottom
-    AnchorSideBottom.Control = Owner
-    AnchorSideBottom.Side = asrBottom
-    Left = 728
-    Height = 781
-    Top = 0
-    Width = 893
-    Anchors = [akTop, akLeft, akRight, akBottom]
-    Caption = 'Тест'
-    ClientHeight = 761
-    ClientWidth = 889
-    TabOrder = 5
-    Visible = False
-    object Label4: TLabel
-      Left = 0
-      Height = 15
-      Top = 16
-      Width = 34
-      Caption = 'Label1'
-      ParentColor = False
+    object img0: TImage
+      Left = 8
+      Height = 128
+      Top = 376
+      Width = 120
+      OnClick = img0Click
+      Picture.Data = {
+        1754506F727461626C654E6574776F726B47726170686963E603000089504E47
+        0D0A1A0A0000000D4948445200000079000000800802000000A00551CF000003
+        5F4944415478DAEDDB3172D35C14866169056C22EEB202B2026011E970993474
+        2C82947197458086058415302992ECC5204B388A746533BEE7FB64C5EFA9FEA1
+        F8E79D0771256B74CAF57A5D309629B1B60DD6BEC1DA377DEBB22CA74E7A6BB3
+        154E581FDB957E844987C563ED8BC7DA178FB52F1E6B5F3CD6BE78AC7DF10EEB
+        E79BE5F74FB7576701B9934C4EBFD7FAF9E662F1F0757DFBE1D0FFC1C4D679FD
+        4EEBBAF4FAD7E71F73B5CEEDF75937A5C5FB6F4FF7071F21535AE7F7BBACFF96
+        5E3E9C17AB55314FEB887E8F755D5ADCDD15978BEBF39C23642AEB987E877553
+        7A7FF5B42C3FAEB28EEB69ACA3FAF5D6FF4ACF36075EDE113285755CBFDA7A5B
+        DADE5CE6661DD92FB6AEEA7F76DD3FC83B420E4C6A1F21FE6B5E0786F64BADAB
+        E5C5E397ED655077FFCEBBACC5D775FFA74A70BFD0FA7569C81162B50EEF5759
+        77CEB976AAFCA710A3B5A25F62BDB9047A0FA2CD9999F7ABD165BDD0F4875B77
+        EF26ED55D0BF35053DA2C64F1DFAF35D51559A7EDE5F4F138FB52F1E6B5F3CD6
+        BE78AC7DF158FBE2B1F6C563ED8BC7DA178FB52F1E6B5F3CD6BE78AC7DF158FB
+        E2B1F6C563ED8B67E74E3E5CD713C463ED8BC7DA178FB52F1E6B5FBCC4BAF986
+        21F7BB90D0A4F4BC7C991015BB2B3EDABAF3A9C8B15B773F6A0AF9406B5FBCE6
+        0CD9A41FB7755F57A48D756ABD2BB439197F9AD6A90FF502B603F7C49FA675EA
+        E6DDDE2783B14FDE3ACDDAFC05608DF5E8CCD19A33242C69D897B48E7E10C13A
+        E52A3942B04E3DE0691EF9B0DE26BE81DF8DB1B719C3FB10D1455D68AD07EBB2
+        F957B7F03DDFCB9B3285733F9EF7D7BE78AC7DF158FBE2B1F6C563ED8BC7DA17
+        8FB52F1E6B5F3CD6BE78AC7DF158FBE2B1F6C563ED8BC7DA178FB52F1E6B5F3C
+        D6BE78AC7DF158FBE2D96F940FD7F504F158FBE2B1F6C563ED8BC7DA172FB08E
+        5E1A945AC7AE62EE8E97EC37C62E0D4ABFE76BFE738ED6928F3FB5678866D52E
+        191F692D5A1AC47A38AAA541AC47AA054B83580F46B6C886F560B0DE172FB6E6
+        0C519ED7F14B83580F47B534887562444B83588F87F3BB71245EF83E246A6950
+        6AADD9F84FC70BDEF3452F0DAAAC05AB98BBE3797FED8BC7DA178FB52F1E6B5F
+        3CD6BE78AC7DF158FBE2B1F6C563ED8BC7DA178FB52F1E6B5F3CD6BE78AC7DF1
+        58FBE2B1F6C563ED8BC7DA17CFCE9D7C46AD19DD60ED1BAC7D83B56FB0F6CD1F
+        4DE067799B20E3CD0000001574455874417574686F72005149502053686F7420
+        332E342E32E00C48AA00000021744558744372656174696F6E2054696D650032
+        3031352D30342D32322032303A32333A3237F11D37890000000049454E44AE42
+        6082
+      }
+      Visible = False
     end
-  end
-  object test4: TGroupBox
-    AnchorSideRight.Control = Owner
-    AnchorSideRight.Side = asrBottom
-    AnchorSideBottom.Control = Owner
-    AnchorSideBottom.Side = asrBottom
-    Left = 728
-    Height = 781
-    Top = 0
-    Width = 893
-    Anchors = [akTop, akLeft, akRight, akBottom]
-    Caption = 'Тест'
-    ClientHeight = 761
-    ClientWidth = 889
-    TabOrder = 6
-    Visible = False
-    object Label5: TLabel
-      Left = 0
-      Height = 15
-      Top = 16
-      Width = 34
-      Caption = 'Label1'
-      ParentColor = False
+    object img1: TImage
+      Left = 8
+      Height = 208
+      Top = 376
+      Width = 200
+      OnClick = img0Click
+      Picture.Data = {
+        1754506F727461626C654E6574776F726B477261706869633C08000089504E47
+        0D0A1A0A0000000D49484452000000C4000000CF08020000002503E9FF000007
+        B54944415478DAED9D3B761C551445ABE762252C8F008F00481C913AC3A19D90
+        1132001C5A99532227E0119811B01C60CF45486A49EE4FC976BF3AAFCED579FB
+        462C30ACFD76EFEEAE6AA92F9B8B8B8B896114B321264635C4C4C8869818D910
+        13231B626264B317D366B371F3300F690E5E890E63AAF6425510A92C955D0231
+        E550D92510530E955D0231E550D92510530E955D0231E550D92510530E955DC2
+        1A317D7AF5FCAF9F5EBF78A4213E71DE3DDFFC787EFCB77FF9FBE2F50FCDFFD1
+        1EA296582A22A17F4C9F5E3D39FBF05B2BB504E90AE1E53FDFFFF1F1FDF6B1BA
+        71DBEE522F6A99A522127AC7B43D82F9613B863834EBA0125A2A22A16F4C5BDC
+        A999578474FD24DC7FA8B6CFCBD6874F2B6AB9A522127AC67429E9D987C7D3F9
+        F9E48D694663A1572685A52212FAC57425697AF3667A76F6F271FBEBB700E95A
+        E3BEB2654F49A5A8064B97F06F9F9E4ABE8A845E316D25BD7FF1F1F809B190B8
+        81E4ECE5CEB37EF185A7505483A536FC7524F489E956D2A3C34308884F47B9BA
+        20F93C8A4B138DA8064B37377D4FDF6E7EFFEE8463AC24A1474C77928E9F1102
+        E29359F6EE613417BB0A510D96AEFEDC9F3F5FFFB1CB97966FCF692D091D623A
+        FA846CC98BE952A47BEF611699545DC99D66692FA0533E985A4B823CA677CF9F
+        FCF7EB1DE115F3BFC6876DE6BA53F1BC147C2E7FB2A5A37AAEFEADE95B9EA7AB
+        4910C7B42F69F9BBDC42A4398D8A8BCFC5899F6C69F685E8DBDEEBD693A08C69
+        E72A6017D977DF34F728DD5E8BDAA89A2CDD93CDCE45540509B298AEF90E3E2A
+        59F8A9D842A41B633BC2EE6E6A96DECC3453B559FAC22BD0D72E9D5695208969
+        F762F206FBF06674DD1F5CDCF353F249A0B09DAAD5D257AE8DEEFDC7EB4BE0F7
+        9972A8EC12882987CA2E819872A8EC12882987CA2E819872A8EC12882987CA2E
+        819872A8EC12882987CA2E819872A8EC12882987CA2E819872A8EC12882987CA
+        2E819872A8EC12882987CA2E819872A8EC12882987CA2E81D5CD4CFBF0CA144B
+        6597404C39547609C494436597404C39547609C494436597D02526C117D90B23
+        09A92A9C4528411DD3CE97B5AAC4A446D25095398B50429FB7B9D9AFB78B88ED
+        484AAA0267114A20262B5581B30825109395AAC059841288C94A55E02C4209C4
+        64A52A7016A10462B25215388B50023159A90A9C45288198AC5405CE2294404C
+        56AA0267114A20262B5581B30825109395AAC0598412BAC474BC9553486C4712
+        5255388B50823A26F5FFA5A3209286AACC598412F87DA61C2ABB0462CAA1B24B
+        20A61C2ABB0462CAA1B24B20A61C2ABB0462CAA1B24B20A61C2ABB0462CAA1B2
+        4B20A61C2ABB0462CAA1B24B20A61C2ABB0462CAA1B24B20A61C2ABB0462CAA1
+        B24B20A61C2ABB0462CAA1B24B20A61C2ABB0462CAA1B24B20A61C2ABB04F680
+        33EDC32B532C955D0231E550D92510530E955D0231E550D92510530E955DC218
+        7BC03F7F1156F30D58674CEAB308258CB207FCE68BF9BB7FEDA52A7316A184F8
+        2D2887CA250F8129A62E67114A088F69FB9EB0E75BC16689A9D3598412B263DA
+        FADF0799794C56A6AA7516A184EC98E6EE0414DB8D1C31F53A4BF30C16D3BCEB
+        EDA3F2D062EA7696E621A6899854434C0FF66DAEDB599A67B098669FB87317B2
+        EB52D53A4BF38C16D39C6CC53B4395BB39E7BBDC7031CDDC3B4BEEA68B7CCE64
+        FD6460BC98F804BCDF0CB9077C47B9EAA95CE16773DE97A5698D980AEE019F76
+        7FFCAC91EFFCAD01F5598412F87DA61C2ABB0462CAA1B24B20A61C2ABB0462CA
+        A1B24B20A61C2ABB0462CAA1B24B20A61C2ABB0462CAA1B24B20A61C2ABB0462
+        CAA1B24B20A61C2ABB0462CAA1B24B20A61C2ABB0462CAA1B24B20A61C2ABB04
+        62CAA1B24B20A61C2ABB0462CAA1B24B607533D33EBC32C552D92510530E955D
+        0231E550D92510530E955D0231E550D925748849BA5BB8E036692155CB8CB6BA
+        59B85BB8E036690DD582B30CB2BA59BF59A1E02E0D2555C31906595CD163B730
+        31DDCD50AB9BBBEC1626A6DB196B757397DDC2C4B47780515637F759074B4C37
+        33D6B65D62EA3AC4C4DB9C6C065BDDDC65B73031ED1D6098D5CD5D760B13D3ED
+        0CB6BAB9C76E6162BA9BD15637F30978D719E913F083F3955ADFAEBD54ADF0B3
+        B90156374FE2DDC205B749CB44B50DAB9B85C415A626955D0231E550D9251053
+        0E955D0231E550D92510530E955D0231E550D92510530E955D0231E550D92510
+        530E955D0231E550D92510530E955D0231E550D92510530E955D0231E550D925
+        10530E955D0231E550D92510530E955D0231E550D925B0BA99691F5E9962A9EC
+        12882987CA2E819872A8EC12882987CA2E819872A8EC12C658DDAC5E77CCEAE6
+        698D98AAAE6ED6AE3BAEF0F57056370B88ED480AAA4267114A085FDDDC69DD71
+        91953AAC6E5E4A6C475A4C55EB2C4209D9AB9B7BAD3B6675F3D437A682DB76BB
+        6DA8ADB22075AC6DBBC4A41A6232BFCD755B775C25A6D8B7B98AAB9B7BAD3B66
+        75F364B89B33AF6EEEB5EEB8CADD1CAB9B1712DB919653953A8B50029F805BA8
+        0A9D45286180D5CD1DD61D57F8D91CAB9B05C4762419558DB30825F0FB4C3954
+        7609C494436597404C39547609C494436597404C39547609C494436597404C39
+        547609C494436597404C39547609C494436597404C39547609C494436597404C
+        39547609C494436597404C39547609C494436597404C39547609C494436597C0
+        EA66A67DBE1413C32C19626264434C8C6C888991CDFF154C8480531550D40000
+        001574455874417574686F72005149502053686F7420332E342E32E00C48AA00
+        000021744558744372656174696F6E2054696D6500323031352D30342D323220
+        32303A32323A333357D7A5B40000000049454E44AE426082
+      }
+      Visible = False
+    end
+    object img2: TImage
+      Left = 8
+      Height = 208
+      Top = 376
+      Width = 202
+      Picture.Data = {
+        1754506F727461626C654E6574776F726B47726170686963D807000089504E47
+        0D0A1A0A0000000D49484452000000C2000000CC0802000000AE89EB16000007
+        514944415478DAED9D317613671446E5BD8454AC20AC2049932A2D5D5C86261D
+        65BA34A1848E36559AC42B80157028027B71B0856D591A8C34FF9BF9EF37735F
+        C5C9E170EE7F753523C9F2CBD9E5E5E5C671DAE6CC8C9CF63123A760CCC82998
+        BB8CCECECE7AC338197378E9B99711EDCA241270060D98513C12C18019C52311
+        0C98513C12C18019C523110C98513C12C18019C523110C4C9ED1C717E7FFFCF8
+        F2D76FCA884F998BF3B31F5E1DFEE75FFEBD7CF9FDB87F1168896060E28C3EBE
+        78F2E8FDF3B1C825485708CFDE7EF7E78737DB47E9B3D891228196080626CD68
+        CB3FBEFCC28C7621F6B5CE8E546B896060C28CB6AC9B71B07548D7CFBDFB0FD2
+        F6E938EA81035A2218982CA34F7A9EBE7FBC79F56AD337A30187A0AB51852582
+        818932BAD2B379FD7AF3F4D1B3C75D5FCF5E3BBCEFABE19938BFA54FB07FFFF4
+        00E9F69F78A886590C4C92D1CDD93E1C3E0FDA894F2579F46CE799DEF6EAB28B
+        A58742FA7A4433199820A3DBB3ED9FA086F84494AB171E77D3FC12A483A52FB7
+        F2B54BD57C06CA33DA3974F78CF6DFA214BC9CED62E9D35FF9E3DB37FBB91C11
+        D16C06AA333AF8B8ABE58D6C2BD217DFA28CD7D8C9D2613247DCCF6634509BD1
+        C5F993FF7EBBC5BB027ED7720D6D441A7871D9FC74EC6569AF9A233FB09CCD40
+        6546F7F5B4DFD31A91861C36BFC2EC6769F7CE76CCFD6C560365191D5E642F1A
+        DFA735220D3D3E372F38BBBD536BB27413CF71F7B3590DD464740DB7F7D147CB
+        475C0F119F40F476D7D6ED7B965E48ED96AEFB79FEF35FBF1F1DD15C06DA33DA
+        7DB9F89979FF5DE6D8F4C7217DE187DA9B567F044B4325120CF87DA378248201
+        338A47221830A378248201338A47221830A378248201338A47221830A3782482
+        01338A47221830A378248201338A47221830A378248201338A47221830A37824
+        8201338A47221830A378248201338A47221870A1B173F278355A2012C18019C5
+        23110C98513C12C18019C523110C98513C12C1407D46ADBF23FE35E2652011CE
+        5268A034A39DDF8FA23C664024CC590A0D4C70531BFCCDF13AE2852001CE5268
+        C08C3A2101CE5268C08C3A2101CE5268C08C3A2101CE5268C08C3A2101CE5268
+        C08C3A2101CE5268C08C3A2101CE5268C08C3A2101CE5268C08C3A2101CE5268
+        C08C3A2101CE5268C08C3A2101CE5268A03EA3C3D595B5C4CB40229CA5D04069
+        46D5FF838A652261CE5268C0EF1BC523110C98513C12C18019C523110C98513C
+        12C18019C523110C98513C12C18019C523110C98513C12C18019C523110C9851
+        3C12C18019C523110C98513C12C18019C523110C98513C12C18019C523110C98
+        513C12C18019C523110C98513C12C1800B8D9D93C7ABD102910806CC281E8960
+        C08CE2910806CC281E8960C08CE291080656B0D0F8EEB7040BA0BA67E442E31A
+        E211489F7F5379F7CF1D91DACEB2FDE3A233DA392D23A3FD70DA43EA7E355ACB
+        2A084E46DBBBD9BD6A9AD9CC686D196D2BBA0F3250D69C4815634625C4A7716C
+        86326A58EB62462BCB68B8986D5B66347ECC686346ED6346DED40A6665190D5E
+        78865E76CF8854316654427CF40C25D37A4F33A3D56534F0EEBEF9FDBE19AD2F
+        233FC59E6256B9D078279CF64B51A1A5D1E342E31AE293E7EE279A05EE5D68EC
+        F78D968944306046F148040366148F44306046F148040366148F44306046F148
+        040366148F44306046F148040366148F44306046F148040366148F44306046F1
+        48040366148F44306046F148040366148F44306046F148040366148F44306046
+        F148040366148F4430E05E6CE7E4F16AB440248201338A47221830A378248201
+        338A47221830A378248281EA8C904BA871ABBA1967293450BF179BB5841AB8AA
+        1B73964203851981D77780969C80CE5268A02C23F4126A33AA9B4933622FA136
+        A3BA993423F6126A33AA9B2933826F0F36A3BA3123332A98D933F2A636C52C39
+        23F8126A33AA9BD9DFA97196509B51DDCCFDB9116809B519D58D9F629B51C1CC
+        FA3335D4126AD6AA6ECC590A0D54FF849FB6849AB9AA9B719642037EDF281E89
+        60C08CE2910806CC281E8960C08CE2910806CC281E8960C08CE2910806CC281E
+        8960C08CE2910806CC281E8960C08CE2910806CC281E8960C08CE2910806CC28
+        1E8960C08CE2910806CC281E8960C08CE2910806CC281E8960C08CE29108065C
+        68EC9C3C5E8D168844306046F148040366148F44306046F148040366148F4430
+        B08285C64024C6590A0DAC62A1310B0973964203CB5E050144029DA5D0C09217
+        1A039150672934B0E085C640A4D133C9590A0D2C78A1311069F44C729671B3B2
+        4DB440A4D133CD59C68D19F5461A3DABCEA8EF1D0488347AA639CBB859DB4263
+        20D2E899E42CE3666D0B8D8148A36792B3141A58F242632012EA2C8506FC147B
+        6624D0590A0D2C7DA1311009739642034B5F68CC44629CA5D080DF378A472218
+        30A378248201338A47221830A378248201338A47221830A378248201338A4722
+        1830A378248201338A47221830A378248201338A47221830A378248201338A47
+        221830A378248201338A47221830A378248201338A47221830A378248201171A
+        3B27CF431939CEE83123A760CCC82998FF01A646DE770E2FF629000000157445
+        5874417574686F72005149502053686F7420332E342E32E00C48AA0000002174
+        4558744372656174696F6E2054696D6500323031352D30342D32322032303A32
+        323A34388F44EAFB0000000049454E44AE426082
+      }
+      Visible = False
     end
   end
   object test5: TGroupBox
@@ -236,97 +381,6 @@ object Form1: TForm1
       ParentColor = False
     end
   end
-  object test: TGroupBox
-    AnchorSideRight.Control = Owner
-    AnchorSideRight.Side = asrBottom
-    AnchorSideBottom.Control = Owner
-    AnchorSideBottom.Side = asrBottom
-    Left = 728
-    Height = 781
-    Top = 0
-    Width = 893
-    Anchors = [akTop, akLeft, akRight, akBottom]
-    Caption = 'Тест'
-    ClientHeight = 761
-    ClientWidth = 889
-    Color = clHighlightText
-    ParentColor = False
-    TabOrder = 2
-    Visible = False
-    object ans: TCheckGroup
-      Left = 8
-      Height = 96
-      Top = 16
-      Width = 376
-      AutoFill = True
-      Caption = '1. Какие значения может принимать логическая переменная?'
-      ChildSizing.LeftRightSpacing = 6
-      ChildSizing.TopBottomSpacing = 6
-      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
-      ChildSizing.EnlargeVertical = crsHomogenousChildResize
-      ChildSizing.ShrinkHorizontal = crsScaleChilds
-      ChildSizing.ShrinkVertical = crsScaleChilds
-      ChildSizing.Layout = cclLeftToRightThenTopToBottom
-      ChildSizing.ControlsPerLine = 1
-      ClientHeight = 76
-      ClientWidth = 372
-      Items.Strings = (
-        '1'
-        '101'
-        '10'
-        '0'
-      )
-      TabOrder = 0
-      Data = {
-        0400000002020202
-      }
-    end
-    object ans1: TRadioGroup
-      Left = 8
-      Height = 89
-      Top = 128
-      Width = 376
-      AutoFill = True
-      Caption = '2. Какими буквами обозначаются логическиие переменные?'
-      ChildSizing.LeftRightSpacing = 6
-      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
-      ChildSizing.EnlargeVertical = crsHomogenousChildResize
-      ChildSizing.ShrinkHorizontal = crsScaleChilds
-      ChildSizing.ShrinkVertical = crsScaleChilds
-      ChildSizing.Layout = cclLeftToRightThenTopToBottom
-      ChildSizing.ControlsPerLine = 1
-      ClientHeight = 69
-      ClientWidth = 372
-      Items.Strings = (
-        'Латинского алфавита'
-        'Кириллицы'
-      )
-      TabOrder = 1
-    end
-    object Button5: TButton
-      Left = 120
-      Height = 48
-      Top = 344
-      Width = 136
-      Caption = 'Завершить тест'
-      OnClick = Button5Click
-      TabOrder = 2
-    end
-  end
-  object test2: TGroupBox
-    AnchorSideRight.Control = Owner
-    AnchorSideRight.Side = asrBottom
-    AnchorSideBottom.Control = Owner
-    AnchorSideBottom.Side = asrBottom
-    Left = 728
-    Height = 781
-    Top = 0
-    Width = 893
-    Anchors = [akTop, akLeft, akRight, akBottom]
-    Caption = 'Тест'
-    TabOrder = 4
-    Visible = False
-  end
   object Label1: TLabel
     Left = 256
     Height = 64
@@ -374,13 +428,7 @@ object Form1: TForm1
     ClientWidth = 889
     TabOrder = 3
     Visible = False
-    object Label2: TLabel
-      Left = 0
-      Height = 1
-      Top = 16
-      Width = 1
-      ParentColor = False
-    end
+    OnClick = test1Click
     object t1ans: TRadioGroup
       Left = 8
       Height = 144
@@ -502,6 +550,527 @@ object Form1: TForm1
       Caption = 'Закончить тест'
       OnClick = Button1Click
       TabOrder = 4
+    end
+  end
+  object test: TGroupBox
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 728
+    Height = 781
+    Top = 0
+    Width = 893
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Caption = 'Тест'
+    ClientHeight = 761
+    ClientWidth = 889
+    Color = clHighlightText
+    ParentColor = False
+    TabOrder = 2
+    Visible = False
+    object ans: TCheckGroup
+      Left = 8
+      Height = 96
+      Top = 16
+      Width = 376
+      AutoFill = True
+      Caption = '1. Какие значения может принимать логическая переменная?'
+      ChildSizing.LeftRightSpacing = 6
+      ChildSizing.TopBottomSpacing = 6
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 1
+      ClientHeight = 76
+      ClientWidth = 372
+      Items.Strings = (
+        '1'
+        '101'
+        '10'
+        '0'
+      )
+      TabOrder = 0
+      Data = {
+        0400000002020202
+      }
+    end
+    object ans1: TRadioGroup
+      Left = 8
+      Height = 89
+      Top = 128
+      Width = 376
+      AutoFill = True
+      Caption = '2. Какими буквами обозначаются логическиие переменные?'
+      ChildSizing.LeftRightSpacing = 6
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 1
+      ClientHeight = 69
+      ClientWidth = 372
+      Items.Strings = (
+        'Латинского алфавита'
+        'Кириллицы'
+      )
+      TabOrder = 1
+    end
+    object Button5: TButton
+      Left = 120
+      Height = 48
+      Top = 344
+      Width = 136
+      Caption = 'Завершить тест'
+      OnClick = Button5Click
+      TabOrder = 2
+    end
+  end
+  object test2: TGroupBox
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 728
+    Height = 781
+    Top = 0
+    Width = 893
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Caption = 'Тест'
+    ClientHeight = 761
+    ClientWidth = 889
+    TabOrder = 4
+    Visible = False
+    object ttans: TRadioGroup
+      Left = 8
+      Height = 89
+      Top = 16
+      Width = 376
+      AutoFill = True
+      Caption = '1. С каким количеством переменных работает инверсия?'
+      ChildSizing.LeftRightSpacing = 6
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 1
+      ClientHeight = 69
+      ClientWidth = 372
+      Items.Strings = (
+        '2'
+        '4'
+        '1'
+        '6'
+      )
+      TabOrder = 0
+    end
+    object ttans1: TCheckGroup
+      Left = 8
+      Height = 113
+      Top = 128
+      Width = 377
+      AutoFill = True
+      Caption = '2. Как ещё инверсия обозначается?'
+      ChildSizing.LeftRightSpacing = 6
+      ChildSizing.TopBottomSpacing = 6
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 1
+      ClientHeight = 93
+      ClientWidth = 373
+      Items.Strings = (
+        'дизьюнкция'
+        '!'
+        'коньюнкция'
+        'логическое отрицание'
+        'НЕ'
+      )
+      TabOrder = 1
+      Data = {
+        050000000202020202
+      }
+    end
+    object ttans2: TRadioGroup
+      Left = 8
+      Height = 57
+      Top = 264
+      Width = 376
+      AutoFill = True
+      Caption = '3. Выберите правильный ответ к выражению: !1'
+      ChildSizing.LeftRightSpacing = 6
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 1
+      ClientHeight = 37
+      ClientWidth = 372
+      Items.Strings = (
+        '1'
+        '0'
+      )
+      TabOrder = 2
+    end
+    object ttans3: TRadioGroup
+      Left = 9
+      Height = 57
+      Top = 344
+      Width = 376
+      AutoFill = True
+      Caption = '4. Выберите правильный ответ к выражению: !0'
+      ChildSizing.LeftRightSpacing = 6
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 1
+      ClientHeight = 37
+      ClientWidth = 372
+      Items.Strings = (
+        '1'
+        '0'
+      )
+      TabOrder = 3
+    end
+    object Button2: TButton
+      Left = 9
+      Height = 48
+      Top = 632
+      Width = 376
+      Caption = 'Завершить тест'
+      OnClick = Button2Click
+      TabOrder = 4
+    end
+  end
+  object test3: TGroupBox
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 728
+    Height = 781
+    Top = 0
+    Width = 893
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Caption = 'Тест'
+    ClientHeight = 761
+    ClientWidth = 889
+    TabOrder = 5
+    Visible = False
+    object tttans: TCheckGroup
+      Left = 16
+      Height = 105
+      Top = 16
+      Width = 376
+      AutoFill = True
+      Caption = '1. Как ещё обозначается логическое "И" ?'
+      ChildSizing.LeftRightSpacing = 6
+      ChildSizing.TopBottomSpacing = 6
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 1
+      ClientHeight = 85
+      ClientWidth = 372
+      Items.Strings = (
+        'коньюнкция'
+        '^'
+        'логическое умножение'
+      )
+      TabOrder = 0
+      Data = {
+        03000000020202
+      }
+    end
+    object tttans1: TRadioGroup
+      Left = 16
+      Height = 97
+      Top = 144
+      Width = 377
+      AutoFill = True
+      Caption = '2. Выберите правильный ответ к выражению: 0^0 ?'
+      ChildSizing.LeftRightSpacing = 6
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 1
+      ClientHeight = 77
+      ClientWidth = 373
+      Items.Strings = (
+        '1'
+        '0'
+      )
+      TabOrder = 1
+    end
+    object tttans2: TRadioGroup
+      Left = 16
+      Height = 97
+      Top = 264
+      Width = 377
+      AutoFill = True
+      Caption = '3. Выберите правильный ответ к выражению: 1^0 ?'
+      ChildSizing.LeftRightSpacing = 6
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 1
+      ClientHeight = 77
+      ClientWidth = 373
+      Items.Strings = (
+        '0'
+        '1'
+      )
+      TabOrder = 2
+    end
+    object tttans3: TRadioGroup
+      Left = 15
+      Height = 97
+      Top = 384
+      Width = 377
+      AutoFill = True
+      Caption = '4. Выберите правильный ответ к выражению: 0^1 ?'
+      ChildSizing.LeftRightSpacing = 6
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 1
+      ClientHeight = 77
+      ClientWidth = 373
+      Items.Strings = (
+        '0'
+        '1'
+      )
+      TabOrder = 3
+    end
+    object tttans4: TRadioGroup
+      Left = 15
+      Height = 97
+      Top = 504
+      Width = 377
+      AutoFill = True
+      Caption = '5. Выберите правильный ответ к выражению: 1^1 ?'
+      ChildSizing.LeftRightSpacing = 6
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 1
+      ClientHeight = 77
+      ClientWidth = 373
+      Items.Strings = (
+        '1'
+        '0'
+      )
+      TabOrder = 4
+    end
+    object tttans5: TRadioGroup
+      Left = 416
+      Height = 97
+      Top = 16
+      Width = 377
+      AutoFill = True
+      Caption = '6. Выберите правильный ответ к выражению: !1^!0 ?'
+      ChildSizing.LeftRightSpacing = 6
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 1
+      ClientHeight = 77
+      ClientWidth = 373
+      Items.Strings = (
+        '1'
+        '0'
+      )
+      TabOrder = 5
+    end
+    object Button3: TButton
+      Left = 16
+      Height = 49
+      Top = 632
+      Width = 378
+      Caption = 'Завершить тест'
+      OnClick = Button3Click
+      TabOrder = 6
+    end
+  end
+  object test4: TGroupBox
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 728
+    Height = 781
+    Top = 0
+    Width = 893
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Caption = 'Тест'
+    ClientHeight = 761
+    ClientWidth = 889
+    TabOrder = 6
+    Visible = False
+    object ttttans: TRadioGroup
+      Left = 9
+      Height = 105
+      Top = 16
+      Width = 376
+      AutoFill = True
+      Caption = '1. Как ещё можно назвать дизьюнкцию?'
+      ChildSizing.LeftRightSpacing = 6
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 1
+      ClientHeight = 85
+      ClientWidth = 372
+      Items.Strings = (
+        'умножение'
+        'деление'
+        'сложение'
+        'вычитание'
+      )
+      TabOrder = 0
+    end
+    object ttttans1: TRadioGroup
+      Left = 8
+      Height = 105
+      Top = 144
+      Width = 376
+      AutoFill = True
+      Caption = '2. Выберите правильный ответ к выражению: 0v0 ?'
+      ChildSizing.LeftRightSpacing = 6
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 1
+      ClientHeight = 85
+      ClientWidth = 372
+      Items.Strings = (
+        '0'
+        '1'
+      )
+      TabOrder = 1
+    end
+    object ttttans2: TRadioGroup
+      Left = 8
+      Height = 105
+      Top = 272
+      Width = 376
+      AutoFill = True
+      Caption = '3. Выберите правильный ответ к выражению: 0v1 ?'
+      ChildSizing.LeftRightSpacing = 6
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 1
+      ClientHeight = 85
+      ClientWidth = 372
+      Items.Strings = (
+        '0'
+        '1'
+      )
+      TabOrder = 2
+    end
+    object ttttans3: TRadioGroup
+      Left = 9
+      Height = 105
+      Top = 399
+      Width = 376
+      AutoFill = True
+      Caption = '4. Выберите правильный ответ к выражению: 1v0 ?'
+      ChildSizing.LeftRightSpacing = 6
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 1
+      ClientHeight = 85
+      ClientWidth = 372
+      Items.Strings = (
+        '0'
+        '1'
+      )
+      TabOrder = 3
+    end
+    object ttttans4: TRadioGroup
+      Left = 424
+      Height = 105
+      Top = 16
+      Width = 376
+      AutoFill = True
+      Caption = '5. Выберите правильный ответ к выражению: 1v1 ?'
+      ChildSizing.LeftRightSpacing = 6
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 1
+      ClientHeight = 85
+      ClientWidth = 372
+      Items.Strings = (
+        '1'
+        '0'
+      )
+      TabOrder = 4
+    end
+    object ttttans5: TRadioGroup
+      Left = 432
+      Height = 105
+      Top = 144
+      Width = 376
+      AutoFill = True
+      Caption = '6. Выберите правильный ответ к выражению: !0v!0 ?'
+      ChildSizing.LeftRightSpacing = 6
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 1
+      ClientHeight = 85
+      ClientWidth = 372
+      Items.Strings = (
+        '1'
+        '0'
+      )
+      OnClick = ttttans5Click
+      TabOrder = 5
+    end
+    object Button6: TButton
+      Left = 8
+      Height = 49
+      Top = 631
+      Width = 379
+      Caption = 'Закончить тест'
+      OnClick = Button6Click
+      TabOrder = 6
     end
   end
 end
