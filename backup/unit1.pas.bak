@@ -17,7 +17,7 @@ type
     Button1: TButton;
     Button5: TButton;
     ans: TCheckGroup;
-    img0: TImage;
+    Image1: TImage;
     t1ans1: TCheckGroup;
     t1ans2: TCheckGroup;
     cont: TButton;
@@ -56,7 +56,7 @@ type
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure FormCreate(Sender: TObject);
     procedure FormShow(Sender: TObject);
-    procedure img0Click(Sender: TObject);
+    procedure Image1Click(Sender: TObject);
   private
 
   public
@@ -119,8 +119,11 @@ begin
        teory.Visible:=true;
        Memo1.Clear;
        Memo1.Text:='Что такое логическое "НЕ" или инверсия?' + #13#10;
-       Memo1.Text:= Memo1.Text + 'Инверсия - это логическая функция принимающая одну переменную и превращающая данную переменную в абсалютно противоположную, то есть то что было "Истиной" станет "Ложью" и на оборот';
-       Memo1.Text:= Memo1.Text + #13#10 + #13#10 + 'Внизу вы можете видеть таблицу истинности для данной функции';
+       Memo1.Text:= Memo1.Text + 'Инверсия - это логическая функция принимающая одну переменную и превращающая данную переменную в обсалютно противоположную, то есть то что было "Истиной" станет "Ложью" и на оборот';
+       Memo1.Text:= Memo1.Text + #13#10 + #13#10 + 'В данной программе мы рассмотрим данные функции:' + #13#10 + #13#10 + 'Логическое отрицание(НЕ) - инверсия - обозначается как ! '
+       + #13#10 + 'Логическое умножение(И) - коньюнкция - обозначается как & и ^ '
+       + #13#10 + 'Логическое сложенеи(ИЛИ) - дезьюнкция - обозначается как v '
+       + #13#10 + 'Импликация - обозначается как -> '
 
   end
   else
@@ -340,7 +343,7 @@ begin
 
 end;
 
-procedure TForm1.img0Click(Sender: TObject);
+procedure TForm1.Image1Click(Sender: TObject);
 begin
 
 end;
