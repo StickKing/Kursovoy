@@ -13,6 +13,13 @@ type
   { TForm1 }
 
   TForm1 = class(TForm)
+    Button9: TButton;
+    tttttttans5: TRadioGroup;
+    tttttttans4: TRadioGroup;
+    tttttttans3: TRadioGroup;
+    tttttttans2: TRadioGroup;
+    tttttttans1: TRadioGroup;
+    tttttttans: TRadioGroup;
     beg: TButton;
     Button1: TButton;
     Button2: TButton;
@@ -24,7 +31,6 @@ type
     Button8: TButton;
     img2: TImage;
     img4: TImage;
-    img5: TImage;
     img6: TImage;
     ttttttans: TRadioGroup;
     tttttans: TRadioGroup;
@@ -42,8 +48,6 @@ type
     Button4: TButton;
     Label1: TLabel;
     Label3: TLabel;
-    Label8: TLabel;
-    Label9: TLabel;
     Memo1: TMemo;
     ans1: TRadioGroup;
     t1ans: TRadioGroup;
@@ -58,7 +62,6 @@ type
     test5: TGroupBox;
     test6: TGroupBox;
     test7: TGroupBox;
-    test8: TGroupBox;
     ttans2: TRadioGroup;
     ttans3: TRadioGroup;
     tttans2: TRadioGroup;
@@ -80,6 +83,10 @@ type
     ttttttans3: TRadioGroup;
     ttttttans4: TRadioGroup;
     ttttttans5: TRadioGroup;
+    tttttttans6: TRadioGroup;
+    tttttttans7: TRadioGroup;
+    tttttttans8: TRadioGroup;
+    tttttttans9: TRadioGroup;
     procedure begClick(Sender: TObject);
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
@@ -89,6 +96,7 @@ type
     procedure Button6Click(Sender: TObject);
     procedure Button7Click(Sender: TObject);
     procedure Button8Click(Sender: TObject);
+    procedure Button9Click(Sender: TObject);
     procedure clClick(Sender: TObject);
     procedure contClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
@@ -197,7 +205,7 @@ begin
   begin
 
        ShowMessage('Тест решён успешно, переходит к следующему уровню, нажмите ОК для продолжения');
-       test1.Visible := false;
+       test2.Visible := false;
        img1.Visible:=true;
        levels:= '4';
        teory.Visible:=true;
@@ -210,7 +218,7 @@ begin
   else
   begin
 
-       test1.Visible:=false;
+       test2.Visible:=false;
        ShowMessage('Увы, тест вы не прошли, почитайте теорию и попробуйте снова');
        teory.Visible:=true;
 
@@ -359,8 +367,8 @@ begin
 
        ShowMessage('Тест решён успешно, переходит к следующему уровню');
        test4.Visible := false;
+       img4.Visible:=true;
        img2.Visible:=false;
-       img3.Visible:=true;
        levels:= '6';
        teory.Visible:=true;
        Memo1.Clear;
@@ -397,7 +405,7 @@ begin
 
        ShowMessage('Тест решён успешно, переходит к следующему уровню');
        test5.Visible := false;
-       img3.Visible:=false;
+       img4.Visible:=false;
        img6.Visible:=true;
        levels:= '7';
        teory.Visible:=true;
@@ -434,7 +442,7 @@ begin
   begin
 
        ShowMessage('Тест решён успешно, переходит к следующему уровню');
-       test5.Visible := false;
+       test6.Visible := false;
        img6.Visible:=false;
        levels:= '8';
        teory.Visible:=true;
@@ -445,13 +453,46 @@ begin
   else
   begin
 
-       test5.Visible:=false;
+       test6.Visible:=false;
        ShowMessage('Увы, тест вы не прошли, почитайте теорию и попробуйте снова');
        teory.Visible:=true;
 
   end;
 
+end;
 
+procedure TForm1.Button9Click(Sender: TObject);
+begin
+
+  //конец
+  if (tttttttans.ItemIndex = 0)
+  and (tttttttans1.ItemIndex = 5)
+  and (tttttttans2.ItemIndex = 2)
+  and (tttttttans3.ItemIndex = 2)
+  and (tttttttans4.ItemIndex = 0)
+  and (tttttttans5.ItemIndex = 1)
+  and (tttttttans6.ItemIndex = 0)
+  and (tttttttans7.ItemIndex = 1)
+  and (tttttttans8.ItemIndex = 1)
+  and (tttttttans9.ItemIndex = 1)
+  then
+  begin
+
+       ShowMessage('Обучение завершено, можете для проверки знаний начать курс заного');
+       test7.Visible := false;
+       levels:= '0';
+       teory.Visible:=true;
+       Memo1.Clear;
+
+  end
+  else
+  begin
+
+       test7.Visible:=false;
+       ShowMessage('Увы, тест вы не прошли, почитайте теорию и попробуйте снова');
+       teory.Visible:=true;
+
+  end;
 
 end;
 
