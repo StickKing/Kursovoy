@@ -6,8 +6,8 @@ object Form1: TForm1
   Caption = 'Обучающая программа "Логические переменные и логические функции"'
   ClientHeight = 781
   ClientWidth = 1621
-  Constraints.MinHeight = 476
-  Constraints.MinWidth = 1278
+  Constraints.MinHeight = 781
+  Constraints.MinWidth = 1621
   OnClose = FormClose
   OnCreate = FormCreate
   OnShow = FormShow

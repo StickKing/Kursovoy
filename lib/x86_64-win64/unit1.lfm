@@ -6,8 +6,8 @@ object Form1: TForm1
   Caption = 'Обучающая программа "Логические переменные и логические функции"'
   ClientHeight = 781
   ClientWidth = 1621
-  Constraints.MinHeight = 476
-  Constraints.MinWidth = 1278
+  Constraints.MinHeight = 781
+  Constraints.MinWidth = 1621
   OnClose = FormClose
   OnCreate = FormCreate
   OnShow = FormShow
@@ -34,24 +34,6 @@ object Form1: TForm1
       Caption = 'Начать обучение'
       OnClick = begClick
       TabOrder = 0
-    end
-    object cont: TButton
-      Left = 16
-      Height = 48
-      Top = 72
-      Width = 136
-      Caption = 'Продолжить обучение'
-      OnClick = contClick
-      TabOrder = 1
-    end
-    object cl: TButton
-      Left = 16
-      Height = 48
-      Top = 128
-      Width = 136
-      Caption = 'Завершить обучение'
-      OnClick = clClick
-      TabOrder = 2
     end
   end
   object teory: TGroupBox
