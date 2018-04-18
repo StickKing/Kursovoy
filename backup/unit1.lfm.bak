@@ -572,145 +572,6 @@ object Form1: TForm1
       TabOrder = 2
     end
   end
-  object test1: TGroupBox
-    AnchorSideRight.Control = Owner
-    AnchorSideRight.Side = asrBottom
-    AnchorSideBottom.Control = Owner
-    AnchorSideBottom.Side = asrBottom
-    Left = 728
-    Height = 781
-    Top = 0
-    Width = 893
-    Anchors = [akTop, akLeft, akRight, akBottom]
-    Caption = 'Тест'
-    ClientHeight = 761
-    ClientWidth = 889
-    TabOrder = 3
-    Visible = False
-    OnClick = test1Click
-    object t1ans: TRadioGroup
-      Left = 8
-      Height = 144
-      Top = 15
-      Width = 368
-      AutoFill = True
-      Caption = '1. Сколько функций мы изучим в этой программе?'
-      ChildSizing.LeftRightSpacing = 6
-      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
-      ChildSizing.EnlargeVertical = crsHomogenousChildResize
-      ChildSizing.ShrinkHorizontal = crsScaleChilds
-      ChildSizing.ShrinkVertical = crsScaleChilds
-      ChildSizing.Layout = cclLeftToRightThenTopToBottom
-      ChildSizing.ControlsPerLine = 1
-      ClientHeight = 124
-      ClientWidth = 364
-      Items.Strings = (
-        '1'
-        '3'
-        '5'
-        '6'
-        '0'
-        '4'
-        '2'
-      )
-      TabOrder = 0
-    end
-    object t1ans1: TCheckGroup
-      Left = 8
-      Height = 168
-      Top = 176
-      Width = 368
-      AutoFill = True
-      Caption = '2. Как можно по другому назвать логическое И?'
-      ChildSizing.LeftRightSpacing = 6
-      ChildSizing.TopBottomSpacing = 6
-      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
-      ChildSizing.EnlargeVertical = crsHomogenousChildResize
-      ChildSizing.ShrinkHorizontal = crsScaleChilds
-      ChildSizing.ShrinkVertical = crsScaleChilds
-      ChildSizing.Layout = cclLeftToRightThenTopToBottom
-      ChildSizing.ControlsPerLine = 1
-      ClientHeight = 148
-      ClientWidth = 364
-      Items.Strings = (
-        'деление '
-        'дизьюнкция'
-        'ИЛИ'
-        'умножение'
-        'импликация'
-        'коньюнкция'
-        '^'
-      )
-      TabOrder = 1
-      Data = {
-        0700000002020202020202
-      }
-    end
-    object t1ans2: TCheckGroup
-      Left = 8
-      Height = 168
-      Top = 360
-      Width = 368
-      AutoFill = True
-      Caption = '3. Как можно по другому назвать логическое ИЛИ?'
-      ChildSizing.LeftRightSpacing = 6
-      ChildSizing.TopBottomSpacing = 6
-      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
-      ChildSizing.EnlargeVertical = crsHomogenousChildResize
-      ChildSizing.ShrinkHorizontal = crsScaleChilds
-      ChildSizing.ShrinkVertical = crsScaleChilds
-      ChildSizing.Layout = cclLeftToRightThenTopToBottom
-      ChildSizing.ControlsPerLine = 1
-      ClientHeight = 148
-      ClientWidth = 364
-      Items.Strings = (
-        'деление '
-        'дизьюнкция'
-        'умножение'
-        'коньюнкция'
-        'импликация'
-        '^'
-      )
-      TabOrder = 2
-      Data = {
-        06000000020202020202
-      }
-    end
-    object t1ans3: TRadioGroup
-      Left = 8
-      Height = 144
-      Top = 544
-      Width = 368
-      AutoFill = True
-      Caption = '4. Сколько переменных принимают логические функции?'
-      ChildSizing.LeftRightSpacing = 6
-      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
-      ChildSizing.EnlargeVertical = crsHomogenousChildResize
-      ChildSizing.ShrinkHorizontal = crsScaleChilds
-      ChildSizing.ShrinkVertical = crsScaleChilds
-      ChildSizing.Layout = cclLeftToRightThenTopToBottom
-      ChildSizing.ControlsPerLine = 1
-      ClientHeight = 124
-      ClientWidth = 364
-      Items.Strings = (
-        'нисколько'
-        '1'
-        '2'
-        '4'
-        'сколько угодно'
-      )
-      TabOrder = 3
-    end
-    object Button1: TButton
-      Left = 8
-      Height = 48
-      Top = 696
-      Width = 368
-      Caption = 'Закончить тест'
-      OnClick = Button1Click
-      TabOrder = 4
-    end
-  end
   object test2: TGroupBox
     AnchorSideRight.Control = Owner
     AnchorSideRight.Side = asrBottom
@@ -1721,6 +1582,145 @@ object Form1: TForm1
       Caption = 'Завершить обучение'
       OnClick = Button9Click
       TabOrder = 10
+    end
+  end
+  object test1: TGroupBox
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 728
+    Height = 781
+    Top = 0
+    Width = 893
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Caption = 'Тест'
+    ClientHeight = 761
+    ClientWidth = 889
+    TabOrder = 3
+    Visible = False
+    OnClick = test1Click
+    object t1ans: TRadioGroup
+      Left = 8
+      Height = 144
+      Top = 15
+      Width = 368
+      AutoFill = True
+      Caption = '1. Сколько функций мы изучим в этой программе?'
+      ChildSizing.LeftRightSpacing = 6
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 1
+      ClientHeight = 124
+      ClientWidth = 364
+      Items.Strings = (
+        '1'
+        '3'
+        '5'
+        '6'
+        '0'
+        '4'
+        '2'
+      )
+      TabOrder = 0
+    end
+    object t1ans1: TCheckGroup
+      Left = 8
+      Height = 168
+      Top = 176
+      Width = 368
+      AutoFill = True
+      Caption = '2. Как можно по другому назвать логическое И?'
+      ChildSizing.LeftRightSpacing = 6
+      ChildSizing.TopBottomSpacing = 6
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 1
+      ClientHeight = 148
+      ClientWidth = 364
+      Items.Strings = (
+        'деление '
+        'дизьюнкция'
+        'ИЛИ'
+        'умножение'
+        'импликация'
+        'коньюнкция'
+        '^'
+      )
+      TabOrder = 1
+      Data = {
+        0700000002020202020202
+      }
+    end
+    object t1ans2: TCheckGroup
+      Left = 8
+      Height = 168
+      Top = 360
+      Width = 368
+      AutoFill = True
+      Caption = '3. Как можно по другому назвать логическое ИЛИ?'
+      ChildSizing.LeftRightSpacing = 6
+      ChildSizing.TopBottomSpacing = 6
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 1
+      ClientHeight = 148
+      ClientWidth = 364
+      Items.Strings = (
+        'деление '
+        'дизьюнкция'
+        'умножение'
+        'коньюнкция'
+        'импликация'
+        '^'
+      )
+      TabOrder = 2
+      Data = {
+        06000000020202020202
+      }
+    end
+    object t1ans3: TRadioGroup
+      Left = 8
+      Height = 144
+      Top = 544
+      Width = 368
+      AutoFill = True
+      Caption = '4. Сколько переменных принимают логические функции?'
+      ChildSizing.LeftRightSpacing = 6
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 1
+      ClientHeight = 124
+      ClientWidth = 364
+      Items.Strings = (
+        'нисколько'
+        '1'
+        '2'
+        '4'
+        'сколько угодно'
+      )
+      TabOrder = 3
+    end
+    object Button1: TButton
+      Left = 8
+      Height = 48
+      Top = 696
+      Width = 368
+      Caption = 'Закончить тест'
+      OnClick = Button1Click
+      TabOrder = 4
     end
   end
 end

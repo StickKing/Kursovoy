@@ -43,8 +43,6 @@ type
     ttans: TRadioGroup;
     t1ans1: TCheckGroup;
     t1ans2: TCheckGroup;
-    cont: TButton;
-    cl: TButton;
     Button4: TButton;
     Label1: TLabel;
     Label3: TLabel;
